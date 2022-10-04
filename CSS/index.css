@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body{
+    padding: 2px 0;
+    background-color: rgb(72, 15, 3);
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#logo{
+    text-align: center;
+    margin: 5px auto 5px;
+    color: white;
+}
+
+#game{
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    margin: 2.5% auto 2% auto;
+    text-align: center;
+
+}
+
+#resultCard{
+    margin: 2px auto 2px auto;
+    padding: 10px 0;
+    color: white;
+    visibility: hidden;
+}
+
+#game .box{
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: 3px auto;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.row1 , .row2 , .row3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+.row1 .row1box , .row2 .row2box , .row3 .row3box{
+    background-color: rgb(244, 243, 240);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-row{
+    width: 100%;
+    max-width: 90%;
+    margin: 5% auto 2% auto;
+    text-align: center;
+
+}
+
+#reset-btn{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin: auto;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.enter{
+    font-size: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+@media only screen and (max-width: 500px) {
+    #game{
+        width: 100%;
+        max-width: 90%;
+        height: 100%;
+        margin: 2% auto 2% auto;
+        text-align: center;
+    
+    }
+
+    #game .box{
+        background-color: rgb(24, 24, 24);
+        width: 100%;
+        max-width: 260px;
+        height: 260px;
+        margin: auto;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .enter{
+        font-size: 3rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-row{
+        width: 100%;
+        max-width: 90%;
+        margin: 10% auto 2% auto;
+        text-align: center;
+    
+    }
+    
+    #reset-btn{
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: 900;
+        margin: auto;
+        padding: 4px 10px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #game{
+        width: 100%;
+        max-width: 95%;
+        height: 100%;
+        margin: 2% auto 2% auto;
+        text-align: center;
+    
+    }
+
+    #game .box{
+        background-color: rgb(24, 24, 24);
+        width: 100%;
+        max-width: 220px;
+        height: 220px;
+        margin: auto;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .enter{
+        font-size: 1.5rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+}
+}
